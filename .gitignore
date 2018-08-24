@@ -5,3 +5,4 @@ AA28_Piano_Cartesiano.xcodeproj
 *.out
 *.exe
 .git
+.gitignore
