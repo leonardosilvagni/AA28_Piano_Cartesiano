@@ -16,10 +16,10 @@ using std::string;
  *  intercept on the y-axis (q) assuming the straight line to be in it's explicit form (y=mx+q)
  *  The Intercept on the y-axis is the var called y_interceptor
  */
-class straight_line {
+class line {
 public:
-    straight_line();
-    ~straight_line();
+    line(int,string,float,float,float);
+    line();
 //  This bool is forthe straight line with y_coefficent equal to 0, perpendicular to x axis
     bool isSpecial; // b == 0
 //  Print the line equation in it's implicit or explicit form
@@ -45,7 +45,7 @@ public:
 //  Setters for explicit form equation members
     void set_gradient(float);
     void set_y_interceptor(float);
-//
+
 private:
 //  Members of the equation in it's implicit form ( ax+by+c=0 )
     float x_coefficent;
