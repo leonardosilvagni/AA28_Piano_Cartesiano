@@ -1,8 +1,0 @@
-*.xcodeproj
-AA28_Piano_Cartesiano.xcodeproj
-*.o
-*.a
-*.out
-*.exe
-.git
-.gitignore
