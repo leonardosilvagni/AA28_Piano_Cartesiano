@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F11A9772212FFE9C00FDD64C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F11A9771212FFE9C00FDD64C /* main.cpp */; };
+		F11A977A2130003000FDD64C /* retta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F11A97782130003000FDD64C /* retta.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		F11A976E212FFE9C00FDD64C /* AA28_Piano_Cartesiano */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AA28_Piano_Cartesiano; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11A9771212FFE9C00FDD64C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F11A97782130003000FDD64C /* retta.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = retta.cpp; sourceTree = "<group>"; };
+		F11A97792130003000FDD64C /* retta.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = retta.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				F11A9771212FFE9C00FDD64C /* main.cpp */,
+				F11A97782130003000FDD64C /* retta.cpp */,
+				F11A97792130003000FDD64C /* retta.hpp */,
 			);
 			path = AA28_Piano_Cartesiano;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F11A977A2130003000FDD64C /* retta.cpp in Sources */,
 				F11A9772212FFE9C00FDD64C /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,6 @@
+*.xcodeproj
+*.o
+*.a
+*.out
+*.exe
+.git
