@@ -6,10 +6,12 @@
 //  Copyright © 2018 Leonardo Silvagni. All rights reserved.
 //
 
-#include <iostream>
+
+#include "retta.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
+    std::cout << "Hello\n";
     return 0;
 }

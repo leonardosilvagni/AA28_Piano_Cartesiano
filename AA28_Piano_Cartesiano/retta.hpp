@@ -16,25 +16,26 @@ using std::string;
  *  intercept on the y-axis (q) assuming the straight line to be in it's explicit form (y=mx+q)
  *  The Intercept on the y-axis is the var called y_interceptor
  */
-class line {
+class Line {
 public:
-    line(int,string,float,float,float);
-    line();
+    Line(bool,int,string,float,float,float);
+    ~Line(){};
 //  This bool is forthe straight line with y_coefficent equal to 0, perpendicular to x axis
     bool isSpecial; // b == 0
 //  Print the line equation in it's implicit or explicit form
-    void print_implicit();
-    void print_explicit();
+    void PrintImplicit();
+    void PrintExplicit();
+    void PrintSpecial();
 //  Getters for implicit form equation members
-    inline float get_x_coefficent(){return x_coefficent;};
-    inline float get_y_coefficent(){return y_coefficent;};
-    inline float get_constant_term(){return constant_term;};
+    inline float get_x_coefficent(){return x_coefficent_;};
+    inline float get_y_coefficent(){return y_coefficent_;};
+    inline float get_constant_term(){return constant_term_;};
 //  Getters for explicit form equation members
-    inline float get_gradient(){return gradient;};
-    inline float get_y_interceptor(){return y_interceptor;};
+    inline float get_gradient(){return gradient_;};
+    inline float get_y_interceptor(){return y_interceptor_;};
 //  Getters for ID's
-    inline string get_line_name(){return line_name;};
-    inline int get_line_id(){return line_id;};
+    inline string get_line_name(){return line_name_;};
+    inline int get_line_id(){return line_id_;};
 //  ~~~~~~~~~~~~~~~~~~~~~~~
 //  ~~~~~~~~Setters~~~~~~~~
 //  ~~~~~~~~~~~~~~~~~~~~~~~
@@ -48,15 +49,15 @@ public:
 
 private:
 //  Members of the equation in it's implicit form ( ax+by+c=0 )
-    float x_coefficent;
-    float y_coefficent;
-    float constant_term; // c in the example above
+    float x_coefficent_;
+    float y_coefficent_;
+    float constant_term_; // c in the example above
 //  Explicit form equation members
-    float gradient;
-    float y_interceptor;
+    float gradient_;
+    float y_interceptor_;
 //  Now we have to know the name and the id of the line
-    string line_name;
-    int line_id;
+    string line_name_;
+    int line_id_;
 };
 
 
