@@ -10,5 +10,6 @@
 #define line_vec_hpp
 #include <iostream>
 #include "retta.hpp"
+#include "point.cpp"
 
 #endif /* line_vector_hpp */
