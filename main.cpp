@@ -7,10 +7,10 @@
 //
 
 
-#include "retta.hpp"
+#include "line_vector.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    push_crt_obj(1);
+
     return 0;
 }
