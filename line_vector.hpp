@@ -11,5 +11,8 @@
 #include <iostream>
 #include "retta.hpp"
 #include "point.cpp"
+#include <boost/variant.hpp>
+
+
 
 #endif /* line_vector_hpp */

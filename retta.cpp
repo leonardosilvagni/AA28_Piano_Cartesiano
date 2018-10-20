@@ -17,7 +17,7 @@ using std::cout;
  *~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 // The line ID should be set automatically by the program not by the programmer
-// This is why it has not the setters method 
+// This is why it has not the setters method
 Line::Line(bool verbose,int ID_temp, string line_name_temp, float x_coeff_temp,\
            float y_coeff_temp,float constant_term_temp){
 	if(verbose){
@@ -42,8 +42,8 @@ Line::Line(bool verbose,int ID_temp, string line_name_temp, float x_coeff_temp,\
 	Line::isSpecial = (Line::get_y_coefficent()==0)?(true):(false);
 		cout << "Done!\nMaximize efficency...Done!\n"<< std::endl;
 		if (Line::isSpecial){
-			Line::set_gradient(NULL);
-			Line::set_y_interceptor(NULL);
+			Line::set_gradient(0);
+			Line::set_y_interceptor(0);
 		}else {
 			Line::set_gradient(-(Line::get_x_coefficent()/Line::get_y_coefficent()));
 			Line::set_y_interceptor(-(Line::get_constant_term()/Line::get_y_coefficent()));}
@@ -93,13 +93,3 @@ void Line::set_constant_term(float temp){
 void Line::set_gradient(float temp){
 	Line::gradient_ = temp;
 }
-
-
-
-
-
-
-
-
-
-
